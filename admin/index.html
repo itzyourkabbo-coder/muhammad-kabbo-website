@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MUHAMMAD KABBO — Admin</title>
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+<div class="shell">
+  <header>
+    <div>
+      <span class="eyebrow">MUHAMMAD KABBO</span>
+      <h1>ADMIN CONTROL</h1>
+      <p>Manage portfolio content from one mobile-friendly dashboard.</p>
+    </div>
+    <span class="status">FIREBASE / V10</span>
+  </header>
+
+  <nav class="tabs" aria-label="Admin sections">
+    <button class="active" data-section="apps">Apps</button>
+    <button data-section="craftland">Craftland</button>
+    <button data-section="projects">Projects</button>
+    <button data-section="stats">Stats</button>
+    <button data-section="updates">Updates</button>
+    <button data-section="social">Social</button>
+  </nav>
+
+  <section id="v9Connection" class="card"></section><main id="panel"></main>
+
+  <section class="card setup-card"><h2>Cloud Status</h2><p id="cloudStatus">Checking Firebase configuration…</p><p class="hint">V10 cloud sync: sign in, load Firestore data, then save changes to publish.</p></section>
+<footer>
+    <button id="exportBtn" class="primary">Export Data JSON</button>
+    <button id="resetBtn" class="danger">Reset Demo Data</button>
+  </footer>
+</div>
+<script src="firebase-config.js"></script>
+<script src="firebase.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
